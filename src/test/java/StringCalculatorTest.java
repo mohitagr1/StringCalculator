@@ -10,4 +10,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(0,StringCalculator.add(""));
     }
 
+    @Test
+    void shouldReturnNumberForOneNumber(){
+        Assertions.assertEquals(4,StringCalculator.add("4"));
+    }
+
 }
