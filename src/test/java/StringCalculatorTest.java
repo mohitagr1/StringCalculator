@@ -30,4 +30,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(6,StringCalculator.add("1\n2,3"));
     }
 
+    @Test
+    void shouldReturnSumOfNumbersSplitByCustomDelimiter(){
+        Assertions.assertEquals(12,StringCalculator.add("//;\n1;4;7"));
+    }
+
 }
