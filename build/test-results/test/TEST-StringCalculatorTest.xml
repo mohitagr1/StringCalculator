@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:57:06" hostname="mohit" time="0.043">
+<testsuite name="StringCalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-04-26T20:25:52" hostname="mohit" time="0.048">
   <properties/>
   <testcase name="shouldReturnZeroOnEmptyString()" classname="StringCalculatorTest" time="0.029"/>
-  <testcase name="shouldReturnSumOfNumbersSplitByCommaAndNewLine()" classname="StringCalculatorTest" time="0.003"/>
-  <testcase name="shouldReturnSumForTwoNumber()" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="shouldThrowExceptionForNegativeNumbers()" classname="StringCalculatorTest" time="0.005"/>
-  <testcase name="shouldReturnNumberForOneNumber()" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="shouldReturnSumForMultipleNumbers()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="shouldReturnNumberOfTimesAddInvoked()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="shouldReturnSumOfNumbersSplitByCommaAndNewLine()" classname="StringCalculatorTest" time="0.004"/>
+  <testcase name="shouldReturnSumForTwoNumber()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="shouldThrowExceptionForNegativeNumbers()" classname="StringCalculatorTest" time="0.006"/>
+  <testcase name="shouldReturnNumberForOneNumber()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="shouldReturnSumForMultipleNumbers()" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="shouldReturnSumOfNumbersSplitByCustomDelimiter()" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="shouldIgnoreNumberGreaterThan1000()" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

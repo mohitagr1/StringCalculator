@@ -5,7 +5,11 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class StringCalculator {
-    public static int add(String numbers) {
+
+    private static int addCounter = 0;
+
+    public int add(String numbers) {
+        addCounter++;
         if(!numbers.isEmpty()){
             List<Integer> numbersList = getIntListFromString(numbers);
             negatives(numbersList);
@@ -14,7 +18,7 @@ public class StringCalculator {
         return 0;
     }
 
-    private static void negatives(List<Integer> numbersList) {
+    private void negatives(List<Integer> numbersList) {
         StringBuilder negativeNumbers = new StringBuilder();
         numbersList.stream().filter(number -> number < 0).forEach(number -> negativeNumbers.append(" ").append(number));
         if(!negativeNumbers.toString().isEmpty()){
@@ -22,19 +26,20 @@ public class StringCalculator {
         }
     }
 
-    private static int getSumFromIntList(List<Integer> numbersList) {
+    private int getSumFromIntList(List<Integer> numbersList) {
         return numbersList.stream()
                 .mapToInt(Integer::intValue)
+                .filter(number -> number < 1001)
                 .sum();
     }
 
-    private static List<Integer> getIntListFromString(String numbers) {
+    private List<Integer> getIntListFromString(String numbers) {
         return Arrays.stream(getSplit(numbers))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
     }
 
-    private static String[] getSplit(String numbers) {
+    private String[] getSplit(String numbers) {
         if(numbers.startsWith("//")){
             Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(numbers);
             if(matcher.matches()){
@@ -45,6 +50,10 @@ public class StringCalculator {
             throw new RuntimeException("Wrong Custom Delimiter Format");
         }
         return numbers.split(",|\n");
+    }
+
+    public int getCalledCount() {
+        return addCounter;
     }
 }
     
