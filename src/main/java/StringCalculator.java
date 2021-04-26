@@ -8,9 +8,18 @@ public class StringCalculator {
     public static int add(String numbers) {
         if(!numbers.isEmpty()){
             List<Integer> numbersList = getIntListFromString(numbers);
+            negatives(numbersList);
             return getSumFromIntList(numbersList);
         }
         return 0;
+    }
+
+    private static void negatives(List<Integer> numbersList) {
+        StringBuilder negativeNumbers = new StringBuilder();
+        numbersList.stream().filter(number -> number < 0).forEach(number -> negativeNumbers.append(" ").append(number));
+        if(!negativeNumbers.toString().isEmpty()){
+            throw new RuntimeException("negatives not allowed :"+ negativeNumbers);
+        }
     }
 
     private static int getSumFromIntList(List<Integer> numbersList) {

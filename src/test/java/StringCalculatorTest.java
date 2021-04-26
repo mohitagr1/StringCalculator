@@ -35,4 +35,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(12,StringCalculator.add("//;\n1;4;7"));
     }
 
+    @Test
+    void shouldThrowExceptionForNegativeNumbers(){
+        Assertions.assertThrows(RuntimeException.class,() -> StringCalculator.add("1,-2,3,-4"),"negatives not allowed : -2 -4");
+    }
+
 }
