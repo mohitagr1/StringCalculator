@@ -15,4 +15,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(4,StringCalculator.add("4"));
     }
 
+    @Test
+    void shouldReturnSumForTwoNumber(){
+        Assertions.assertEquals(7,StringCalculator.add("2,5"));
+    }
+
 }
