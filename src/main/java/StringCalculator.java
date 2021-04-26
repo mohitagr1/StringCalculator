@@ -24,7 +24,7 @@ public class StringCalculator {
     }
 
     private static String[] getSplit(String numbers) {
-        return numbers.split(",");
+        return numbers.split(",|\n");
     }
 }
     

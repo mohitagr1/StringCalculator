@@ -25,4 +25,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(18,StringCalculator.add("2,5,7,4"));
     }
 
+    @Test
+    void shouldReturnSumOfNumbersSplitByCommaAndNewLine(){
+        Assertions.assertEquals(6,StringCalculator.add("1\n2,3"));
+    }
+
 }

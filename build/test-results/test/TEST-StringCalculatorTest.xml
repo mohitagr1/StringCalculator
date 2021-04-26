@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:27:01" hostname="mohit" time="0.036">
+<testsuite name="StringCalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-26T19:29:47" hostname="mohit" time="0.038">
   <properties/>
-  <testcase name="shouldReturnZeroOnEmptyString()" classname="StringCalculatorTest" time="0.019"/>
-  <testcase name="shouldReturnSumForTwoNumber()" classname="StringCalculatorTest" time="0.002"/>
+  <testcase name="shouldReturnZeroOnEmptyString()" classname="StringCalculatorTest" time="0.018"/>
+  <testcase name="shouldReturnSumOfNumbersSplitByCommaAndNewLine()" classname="StringCalculatorTest" time="0.014"/>
+  <testcase name="shouldReturnSumForTwoNumber()" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="shouldReturnNumberForOneNumber()" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="shouldReturnSumForMultipleNumbers()" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
