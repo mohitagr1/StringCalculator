@@ -20,4 +20,9 @@ class StringCalculatorTest {
         Assertions.assertEquals(7,StringCalculator.add("2,5"));
     }
 
+    @Test
+    void shouldReturnSumForMultipleNumbers(){
+        Assertions.assertEquals(18,StringCalculator.add("2,5,7,4"));
+    }
+
 }
